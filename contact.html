@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title> About </title>
+		<title> Contact </title>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="index.css">
 		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-		<link href='//fonts.googleapis.com/css?family=Architects Daughter' rel='stylesheet'>
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 		<script src="jquery/jquery-latest.js"> </script>
 		<script src="javascript/googleanalytics.js" type="text/javascript"> </script>
 		<script>
@@ -18,17 +18,85 @@
   ga('send', 'pageview');
 
 </script>
-	</head>
 
 	<style>
-		body {background-color:indianred;}
-		body {font-style:'Architects Daughter';}
+		body {font-style:'Oswald'; font-size: 20px;}
+		body {background-image: url("images/background.jpg");}
 	</style>
 
+	<style>   /* Nav bar */
+	ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: white;
+			font-family: 'Oswald';
+	}
+
+	li {
+			float: left;
+	}
+
+	li a, .dropbtn {
+			display: inline-block;
+			color: black;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+	}
+
+	li a:hover, .dropdown:hover .dropbtn {
+			background-color: darkgrey;
+	}
+
+	li.dropdown {
+			display: inline-block;
+	}
+
+	.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color:antiquewhite;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+	}
+
+	.dropdown-content a {
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+	}
+
+	.dropdown-content a:hover {background-color: #FFE4C4}
+
+	.dropdown:hover .dropdown-content {
+			display: block;
+	}
+	</style>
+</head>
+
 	<body>
-		<h1> This site has been designed by Selina Dhinsey </h1>
-		<h1> If you would like to leave any feedback, comments or advice on how I can improve the site please do so by filling out the form below </h1>
-		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSccEnHOjpQ1I1phV9LRV7Bk2tLRy3eChAZ8A83oO2spdDN0gg/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+		<ul>
+		  <li><a href="index.html">Home</a></li>
+		  <li><a href="contact.html">Contact</a></li>
+		  <li><a href="about.html">About</a></li>
+		  <li class="dropdown">
+		    <a href="content.html" class="dropbtn">Content</a>
+		    <div class="dropdown-content">
+		      <a href="#">Places To Eat</a>
+		      <a href="#">Music</a>
+		      <a href="#">Sights</a>
+		    </div>
+		  </li>
+		</ul>
+
+		<font face="Oswald"> If you would like to leave any feedback, comments or advice on how I can improve the site please do so by filling out the form below </font>
+		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSccEnHOjpQ1I1phV9LRV7Bk2tLRy3eChAZ8A83oO2spdDN0gg/viewform?embedded=true" width="1250" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 
 	</body>
 
